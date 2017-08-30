@@ -1,3 +1,4 @@
+package prac;
 class ListNode {
 	public Object obj;
 	public ListNode next;
