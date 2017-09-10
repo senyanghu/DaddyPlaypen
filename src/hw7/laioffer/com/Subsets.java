@@ -33,7 +33,7 @@ public class Subsets {
 	public static void main(String args[]) {
 		Subsets sf = new Subsets();
 
-		String nums = "abc";
+		String nums = "";
 		List<String> res = sf.subsets(nums);
 		for (String sub : res) {
 			System.out.println(sub.toString());

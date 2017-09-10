@@ -11,7 +11,7 @@ public class recursion {
 	// a^b
 	// 0^0
 	// denominator == 0
-	// data type convernsion (accuracy loss) int - double
+	// data type convertion (accuracy loss) int - double
 	public double myPow(double x, int n) {
 		if (x == 0 && n == 0) {
 			System.out.println("ERROR");
