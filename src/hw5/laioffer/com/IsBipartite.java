@@ -2,17 +2,17 @@ package hw5.laioffer.com;
 
 import java.util.*;
 
-public class IsBipartite {
-	private class GraphNode {
-		public int key;
-		public List<GraphNode> neighbors;
+class GraphNode {
+	public int key;
+	public List<GraphNode> neighbors;
 
-		public GraphNode(int key) {
-			this.key = key;
-			this.neighbors = new ArrayList<>();
-		}
+	public GraphNode(int key) {
+		this.key = key;
+		this.neighbors = new ArrayList<>();
 	}
+}
 
+public class IsBipartite {
 	public boolean isBipartite(List<GraphNode> graph) {
 		Map<GraphNode, Integer> visited = new HashMap<>();
 		for (GraphNode gn : graph) {
