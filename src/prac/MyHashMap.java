@@ -248,9 +248,12 @@ public class MyHashMap<K, V> {
 	private void rehashing() {
 		Node<K, V>[] newTable = (Node<K, V>[]) (new Node[table.length * 2]);
 		for (Node<K, V> node : table) {
-			int index = this.getIndex(this.getHashValue(node.key));
-			newTable[index] = node;
+			if (node != null) {
+				int index = this.getIndex(this.getHashValue(node.key));
+				newTable[index] = node;
+			}
 		}
+		this.table = newTable;
 	}
 
 	public V remove(K key) {
