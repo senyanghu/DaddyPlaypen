@@ -22,6 +22,7 @@ public class RemoveChar {
 			return input;
 		}
 		char[] inputArr = input.toCharArray();
+		// [0, slowIndex) is the answer
 		int slowIndex = 0;
 		Set<Character> excludeSet = this.buildSet(given);
 
