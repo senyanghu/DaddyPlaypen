@@ -23,7 +23,7 @@ public class RemoveSpaces {
 				break; // we are done
 			}
 			if (wordCount > 0) {
-				charArray[slow++] = ' '; // put one space behind a word
+				charArray[slow++] = ' '; // put one space before the second word
 			}
 			while (cur < charArray.length && charArray[cur] != ' ') {
 				charArray[slow++] = charArray[cur++];
