@@ -90,4 +90,28 @@ public class EnhancedPracticeTwo {
 	// log(k) * kn
 	// space (nk) 虽然有log(k)层 每一层的O(nk) 但是用完了就可以丢弃 相当于始终保持了一层的数据 所以是O(nk)
 
+	// solution 1 读写磁盘的次数会比 solution 2的次数少很多 IO的这个问题需要考虑
+	public void mergeK(List<Integer> lists) {
+
+	}
+
+	// how to remove a target value from BST
+	// case 1: if target > root, root.right = delete(root.right, target)
+	// case 2: if target < root, root.left = delete(root.left, target)
+	// case 3: if target == root
+	// 3.1: if root is a leaf, return null
+	// 3.2: if root has only one child, return this child
+	// 3.3: if root has two children
+	// step 1: find the node with largest value in the left subtree
+	// step 2: copy过来
+	// step 3: 再recursion做 见照片 Oct 1
+
+	
+	
+	// how to insert a target node in a BST
+
+	
+	// DP中心开花
+	
+	
 }
