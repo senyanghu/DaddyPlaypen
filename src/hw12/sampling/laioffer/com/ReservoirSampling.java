@@ -17,11 +17,17 @@ public class ReservoirSampling {
 
 	public ReservoirSampling() {
 		this.count = 0;
-		this.sample = 0;
+		this.sample = null;
 	}
-	
-	
-	
+
+	public void read(int value) {
+		this.count++;
+		int prob = (int) (Math.random() * count);
+		if (prob == 0) {
+			this.sample = value;
+		}
+	}
+
 	public Integer sample() {
 		return sample;
 	}
