@@ -1,6 +1,6 @@
 package hw10.recursion2.laioffer.com;
 
-import hw3.laioffer.com.ListNode;
+import hw03.laioffer.com.ListNode;
 
 /**
  * Reverse pairs of elements in a singly-linked list. Examples L = null, after
