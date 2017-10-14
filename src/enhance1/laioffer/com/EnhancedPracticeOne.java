@@ -58,9 +58,14 @@ public class EnhancedPracticeOne {
 	}
 
 	/**
-	 * Question 1.5.1 再问一下zhubingbing 挤0 1 9 8 4 0 0 2 7 1 9 8 4 2 7 0 0
+	 * Question 1.5.1 再问一下zhubingbing
+	 * 挤0 
+	 * 1 9 8 4 0 0 2 7 
+	 * 1 9 8 4 2 7 0 0
 	 *
-	 * left (excluding): non-zeros right (excluding): zeros [left, right]: 等待探索
+	 * left (excluding): non-zeros 
+	 * right (excluding): zeros 
+	 * [left, right]: 等待探索
 	 */
 	public int test(int[] input) {
 		int left = 0;
