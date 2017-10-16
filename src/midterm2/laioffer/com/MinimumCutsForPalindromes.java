@@ -1,4 +1,4 @@
-package midterm.laioffer.com;
+package midterm2.laioffer.com;
 
 /**
  * 
@@ -8,8 +8,8 @@ package midterm.laioffer.com;
  * 
  * Assumptions: The given string is not null
  * 
- * Examples: “a | babbbab | bab | aba” is a palindrome partitioning of
- * “ababbbabbababa”. The minimum number of cuts needed is 3.
+ * â€œa | babbbab | bab | abaâ€ is a palindrome partitioning of â€œababbbabbababaâ€.
+ * The minimum number of cuts needed is 3.
  */
 public class MinimumCutsForPalindromes {
 	public int minCuts(String input) {
@@ -43,7 +43,7 @@ public class MinimumCutsForPalindromes {
 		}
 		return true;
 	}
-	
+
 	public static void main(String args[]) {
 		MinimumCutsForPalindromes mcfp = new MinimumCutsForPalindromes();
 		System.out.println(mcfp.minCuts("ababbbabbababa"));
