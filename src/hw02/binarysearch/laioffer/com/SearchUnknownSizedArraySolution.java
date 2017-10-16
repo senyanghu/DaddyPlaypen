@@ -1,4 +1,4 @@
-package hw02.laioffer.com;
+package hw02.binarysearch.laioffer.com;
 
 abstract class Dictionary {
 	public Integer get(int index) {

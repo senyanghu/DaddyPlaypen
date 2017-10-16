@@ -1,4 +1,4 @@
-package hw02.laioffer.com;
+package hw02.binarysearch.laioffer.com;
 
 public class BinarySearchSolution {
 	public int binarySearch(int[] array, int target) {

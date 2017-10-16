@@ -1,4 +1,4 @@
-package hw02.laioffer.com;
+package hw02.binarysearch.laioffer.com;
 
 // binary search 两大诀窍
 // (1) 每一次要把问题的scope narrow down
