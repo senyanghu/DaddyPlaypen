@@ -16,6 +16,7 @@ package enhance1.laioffer.com;
  * {5, 4, 3} }
  * 剥洋葱
  */
+// lc - 48
 public class RotateMatrix {
 	public void rotate(int[][] matrix) {
 		int n = matrix.length;
@@ -28,15 +29,17 @@ public class RotateMatrix {
 		int round = n / 2;
 		
 		for (int i = 0; i < round; i++) {
-			int beginIndex = i;
-			int endIndex = n - i - 2;
-			for (int j = beginIndex; j <= endIndex; j++) {
-				int temp = matrix[beginIndex][j];
-				matrix[beginIndex][j] = matrix[n - 1 - j][beginIndex];
-				matrix[n - 1 - j][beginIndex] = matrix[n - 1 - beginIndex][n -1 - j];
-				matrix[n - 1 - beginIndex][n - 1 - j] = matrix[j][n - 1 - beginIndex];
-				matrix[j][n - 1 - beginIndex] = temp;
-			}
-		}
+            for (int j = i; j <= n - i - 2; j++) {
+                // int element1 = matrix[i][j];
+                // int element2 = matrix[j][n - 1 - i];
+                // int element3 = matrix[n - 1 - i][n - 1 - j];
+                // int element4 = matrix[n - 1 - j][i];
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = temp;
+            }
+        }
 	}
 }
