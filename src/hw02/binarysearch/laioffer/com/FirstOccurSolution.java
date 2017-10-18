@@ -24,7 +24,6 @@ public class FirstOccurSolution {
 				end = mid - 1;
 			}
 		}
-
 		return res;
 	}
 

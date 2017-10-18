@@ -30,7 +30,7 @@ public class KClosest {
 			int mid = start + (end - start) / 2;
 			if (input[mid] <= target) {
 				start = mid;
-			} else {
+			} else { // input[mid] > target
 				end = mid;
 			}
 		}

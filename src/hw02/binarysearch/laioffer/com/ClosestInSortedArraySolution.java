@@ -15,7 +15,7 @@ public class ClosestInSortedArraySolution {
 				return mid;
 			} else if (array[mid] < target) {
 				start = mid;
-			} else {
+			} else { // array[mid] > target
 				end = mid;
 			}
 		}

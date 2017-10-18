@@ -1,4 +1,4 @@
-package hw03.laioffer.com;
+package hw03.queueStackLinkedlist.laioffer.com;
 
 // N1 -> N2 -> .......Nn
 // (N1 -> Nn) -> (N2 -> Nn-1) ....

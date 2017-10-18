@@ -1,6 +1,6 @@
 package hw10.recursion2.laioffer.com;
 
-import hw03.laioffer.com.ListNode;
+import hw03.queueStackLinkedlist.laioffer.com.ListNode;
 
 // algorithm note - Sept 03
 // class 11 - recursion - second class

@@ -10,7 +10,9 @@ package enhance1.laioffer.com;
  * 
  * Examples:
  * 
- * {1} --> {1} {1, 0, 3, 0, 1} --> {1, 3, 1, 0, 0}
+ * {1} --> {1} 
+ * 
+ * {1, 0, 3, 0, 1} --> {1, 3, 1, 0, 0}
  */
 public class Move0ToTheEnd2 {
 	public int[] moveZero(int[] array) {

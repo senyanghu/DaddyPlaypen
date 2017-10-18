@@ -1,4 +1,4 @@
-package hw03.laioffer.com;
+package hw03.queueStackLinkedlist.laioffer.com;
 
 // when should we maintain the dummy head? when we initially don't know which node will be the new
 // head of a new linkedList. we can easily allocate a real memory for the dummy head.

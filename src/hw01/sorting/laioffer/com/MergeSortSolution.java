@@ -20,7 +20,7 @@ public class MergeSortSolution {
 		right = mergeSort(right);
 		
 		array = combine(left, right);
-
+		
 		return array;
 	}
 
@@ -29,6 +29,7 @@ public class MergeSortSolution {
 		int rightIndex = 0;
 		int[] combined = new int[left.length + right.length];
 		int index = 0;
+		
 		while (leftIndex < left.length && rightIndex < right.length) {
 			if (left[leftIndex] <= right[rightIndex]) {
 				combined[index++] = left[leftIndex++];

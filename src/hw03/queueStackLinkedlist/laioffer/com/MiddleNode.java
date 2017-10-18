@@ -1,4 +1,4 @@
-package hw03.laioffer.com;
+package hw03.queueStackLinkedlist.laioffer.com;
 
 public class MiddleNode {
 	public ListNode middleNode(ListNode head) {
