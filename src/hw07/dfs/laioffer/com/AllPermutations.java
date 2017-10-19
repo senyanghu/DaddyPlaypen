@@ -13,15 +13,15 @@ public class AllPermutations {
 		return res;
 	}
 
-	private void dfs(char[] arraySet, int index, List<String> res) {
-		if (index == arraySet.length) {
+	private void dfs(char[] arraySet, int start, List<String> res) {
+		if (start == arraySet.length) {
 			res.add(new String(arraySet));
 			return;
 		}
-		for (int i = index; i < arraySet.length; i++) {
-			swap(arraySet, index, i);
-			dfs(arraySet, index + 1, res);
-			swap(arraySet, i, index);
+		for (int i = start; i < arraySet.length; i++) {
+			swap(arraySet, start, i);
+			dfs(arraySet, start + 1, res);
+			swap(arraySet, i, start);
 		}
 	}
 
