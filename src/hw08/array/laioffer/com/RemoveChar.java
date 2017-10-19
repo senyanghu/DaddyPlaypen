@@ -1,4 +1,4 @@
-package hw08.laioffer.com;
+package hw08.array.laioffer.com;
 
 // remove a/some particular chars from a string
 // student, remove 'u' -> stdent

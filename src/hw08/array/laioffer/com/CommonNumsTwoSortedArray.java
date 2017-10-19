@@ -1,4 +1,4 @@
-package hw08.laioffer.com;
+package hw08.array.laioffer.com;
 
 import java.util.*;
 

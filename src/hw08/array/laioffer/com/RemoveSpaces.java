@@ -1,4 +1,4 @@
-package hw08.laioffer.com;
+package hw08.array.laioffer.com;
 
 /**
  * Given a string, remove all leading/trailing/duplicated empty spaces
