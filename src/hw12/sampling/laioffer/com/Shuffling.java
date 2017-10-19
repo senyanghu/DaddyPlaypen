@@ -25,7 +25,7 @@ public class Shuffling {
 
 		for (int i = array.length; i >= 1; i--) {
 			int index = (int) (Math.random() * i);
-			swap(array, index, i);
+			swap(array, index, i - 1);
 		}
 	}
 

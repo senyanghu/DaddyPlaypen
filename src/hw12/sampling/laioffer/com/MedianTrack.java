@@ -44,7 +44,7 @@ public class MedianTrack {
 		}
 
 		// re-balance the load of two heaps
-		if (smallerHalf.size() - largerHalf.size() >= 0) {
+		if (smallerHalf.size() - largerHalf.size() >= 2) {
 			largerHalf.offer(smallerHalf.poll());
 		} else if (smallerHalf.size() < largerHalf.size()) {
 			smallerHalf.offer(largerHalf.poll());

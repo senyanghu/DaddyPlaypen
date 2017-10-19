@@ -6,9 +6,6 @@ package hw09.string.laioffer.com;
  * Assumptions
  * 
  * The given string is not null. n >= 0.
- * 
- * @author senyanghu
- *
  */
 public class RightShiftByNCharacters {
 	public String rightShift(String input, int n) {

@@ -1,7 +1,5 @@
 package hw10.recursion2.laioffer.com;
 
-import hw03.queueStackLinkedlist.laioffer.com.ListNode;
-
 // algorithm note - Sept 03
 // class 11 - recursion - second class
 // boil down a big problem to smaller ones (size n depends on size n-1, n-2 or ... n/2)

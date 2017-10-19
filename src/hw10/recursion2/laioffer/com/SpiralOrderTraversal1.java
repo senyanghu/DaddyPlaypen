@@ -14,7 +14,7 @@ import java.util.*;
  *
  */
 // 经典的剥洋葱的解法
-public class SpiralOrderTraversalOne {
+public class SpiralOrderTraversal1 {
 	public List<Integer> spiral(int[][] matrix) {
 		List<Integer> res = new ArrayList<>();
 		if (matrix == null || matrix.length == 0) {
@@ -65,7 +65,7 @@ public class SpiralOrderTraversalOne {
 
 	public static void main(String args[]) {
 		int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		SpiralOrderTraversalOne soto = new SpiralOrderTraversalOne();
+		SpiralOrderTraversal1 soto = new SpiralOrderTraversal1();
 		List<Integer> res = soto.spiral(matrix);
 		for (int i : res) {
 			System.out.println(i);

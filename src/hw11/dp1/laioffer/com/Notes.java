@@ -11,7 +11,12 @@ public class Notes {
 	 * 
 	 * Recursion是从大到小解决问题 不记录任何的sub-solution只考虑 base case以及recursive rule
 	 * 
-	 * DP是从小到大来解决问题 记录了sub-solution ****由size(n-1)的问题去推演size(n)的问题 ****base case
+	 * DP是从小到大来解决问题 记录了sub-solution 
+	 * 
+	 * ****由size(n-1)的问题去推演size(n)的问题 
+	 * 
+	 * ****base case
+	 * 
 	 * ****induction rule (recurrence function)
 	 */
 }

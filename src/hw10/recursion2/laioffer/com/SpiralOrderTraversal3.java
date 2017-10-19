@@ -1,7 +1,7 @@
 package hw10.recursion2.laioffer.com;
 
 // Spiral Generate
-public class SpiralOrderTraversalThree {
+public class SpiralOrderTraversal3 {
 	public int[][] generateMatrix(int m, int n) {
 		int[][] res = new int[m][n];
 		int k = 1;

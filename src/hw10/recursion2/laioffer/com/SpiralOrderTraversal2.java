@@ -3,7 +3,7 @@ package hw10.recursion2.laioffer.com;
 import java.util.*;
 
 // 这次变成了矩形
-public class SpiralOrderTraversalTwo {
+public class SpiralOrderTraversal2 {
 	public List<Integer> spiralOrder(int[][] matrix) {
 		List<Integer> res = new ArrayList<>();
 
