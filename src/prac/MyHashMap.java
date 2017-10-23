@@ -2,7 +2,7 @@ package prac;
 
 import java.util.Arrays;
 
-/*
+/**
  * 
  * September 11, 2017
  * Map / Set / Hash
@@ -20,14 +20,14 @@ import java.util.Arrays;
  * 
  */
 
-/*
+/**
  * Operation              Average             Worst
  * search                   O(1)               O(n)
  * insert / update          O(1)               O(n)
  * delete                   O(1)               O(n)
  */
 
-/*
+/**
  * put (key, value)
  *    (1) int hash = hash(key) -- hash
  *    (2) int index = hash % table_size -- index
@@ -41,7 +41,7 @@ import java.util.Arrays;
  *    (3) search for the list resides in the bucket to see if the key already exists
  */
 
-/*
+/**
  * ==, equals(), hashCode()
  * 
  * ==:
