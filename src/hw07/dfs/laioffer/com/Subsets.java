@@ -23,11 +23,11 @@ public class Subsets {
 			return;
 		}
 
+		dfs(arraySet, curSet, index + 1, result);
+
 		curSet = curSet.append(arraySet[index]);
 		dfs(arraySet, curSet, index + 1, result);
 		curSet.deleteCharAt(curSet.length() - 1);
-
-		dfs(arraySet, curSet, index + 1, result);
 	}
 
 	public static void main(String args[]) {
@@ -38,6 +38,5 @@ public class Subsets {
 		for (String sub : res) {
 			System.out.println(sub.toString());
 		}
-
 	}
 }
