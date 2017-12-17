@@ -26,7 +26,7 @@ public class RainbowSortSolution {
 				swap(array, left++, cur);
 			} else if (array[cur] == 0) {
 				cur++;
-			} else { // array[cur] == -1
+			} else { // array[cur] == 1
 				swap(array, cur, right--);
 			}
 		}
