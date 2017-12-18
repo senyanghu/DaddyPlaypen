@@ -1,4 +1,4 @@
-package hw01.sorting.laioffer.com;
+package com.laioffer.hw01.sort;
 
 public class QuickSortSolution {
 	public int[] quickSort(int[] array) {
@@ -14,13 +14,17 @@ public class QuickSortSolution {
 		if (start >= end) {
 			return;
 		}
-		int pivotPos = position(array, start, end);
+		int pivotPos = partition(array, start, end);
 		quickSortHelper(array, start, pivotPos - 1);
 		quickSortHelper(array, pivotPos + 1, end);
 	}
 
-	private int position(int[] array, int start, int end) {
+	private int partition(int[] array, int start, int end) {
 		int pivotIndex = this.pivotIndex(start, end);
+		// leftBound and rightBound
+		// [0, leftBound) all smaller (<) than pivot
+		// [leftBound, rightBound] remain to be explored
+		// (rightBound, n-1] all larger or equal than (>=) pivot
 		int pivot = array[pivotIndex];
 		swap(array, pivotIndex, end);
 		int leftBound = start;
@@ -28,14 +32,14 @@ public class QuickSortSolution {
 		while (leftBound <= rightBound) {
 			if (array[leftBound] < pivot) {
 				leftBound++;
-			} else if (array[rightBound] > pivot) {
+			} else if (array[rightBound] >= pivot) {
 				rightBound--;
 			} else {
 				swap(array, leftBound++, rightBound--);
 			}
 		}
-		swap(array, leftBound, end);
-		return leftBound;
+		swap(array, rightBound + 1, end);
+		return rightBound + 1;
 	}
 
 	private int pivotIndex(int start, int end) {
@@ -50,7 +54,7 @@ public class QuickSortSolution {
 
 	public static void main(String args[]) {
 		QuickSortSolution qss = new QuickSortSolution();
-		int[] input = { 1, 2, 10000, 2, 4, 6, 8, 99, 43, 1 };
+		int[] input = { 1, 1, 1, 1, -1 };
 		qss.quickSort(input);
 		for (int i : input) {
 			System.out.print(i + " ");

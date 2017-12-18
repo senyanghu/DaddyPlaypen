@@ -1,4 +1,4 @@
-package hw01.sorting.laioffer.com;
+package com.laioffer.hw01.sort;
 
 public class SelectionSortSolution {
 
@@ -7,9 +7,9 @@ public class SelectionSortSolution {
 			return array;
 		}
 		int min, temp;
-		for (int i = 0; i < array.length - 1; i++) {
+		for (int i = 0; i < array.length - 1; i++) { // outer loop: how many iterations
 			min = i;
-			for (int j = i + 1; j < array.length; j++) {
+			for (int j = i + 1; j < array.length; j++) { // inner loop: find the global from the rest of the elements
 				if (array[j] < array[min]) {
 					min = j;
 				}

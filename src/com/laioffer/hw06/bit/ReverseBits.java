@@ -1,4 +1,4 @@
-package com.laioffer.hw6.bit;
+package com.laioffer.hw06.bit;
 
 // how to reverse all bits of a number
 // 11100 -> 00111

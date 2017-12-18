@@ -1,4 +1,4 @@
-package hw01.sorting.laioffer.com;
+package com.laioffer.hw01.sort;
 
 public class MoveZeroSolution {
 	public void moveZero(int[] nums) {

@@ -1,4 +1,4 @@
-package com.laioffer.hw6.bit;
+package com.laioffer.hw06.bit;
 
 // given a non-negative int number x, how to get hex  representation
 // 十进制   0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15

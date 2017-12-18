@@ -1,4 +1,4 @@
-package com.laioffer.hw6.bit;
+package com.laioffer.hw06.bit;
 
 // Q1: determine whether a number is a power of 2 (x > 0)
 // 有且只有一个bit是1

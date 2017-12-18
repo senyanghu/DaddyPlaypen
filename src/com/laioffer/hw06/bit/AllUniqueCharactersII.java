@@ -1,4 +1,4 @@
-package com.laioffer.hw6.bit;
+package com.laioffer.hw06.bit;
 
 // determine whether a word contains all letters that are unique (no duplicates in letters)
 // assume 26 lower case English letter

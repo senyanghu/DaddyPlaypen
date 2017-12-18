@@ -1,4 +1,4 @@
-package com.laioffer.hw6.bit;
+package com.laioffer.hw06.bit;
 
 // Q2: determine the number of bits that are different between two integers
 //    a = 00 00 1000

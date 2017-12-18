@@ -1,4 +1,4 @@
-package hw01.sorting.laioffer.com;
+package com.laioffer.hw01.sort;
 
 public class RainbowSortSolution {
 	public int[] rainbowSort(int[] array) {
@@ -16,9 +16,11 @@ public class RainbowSortSolution {
 	 * @param left
 	 *            [0. left) should be all -1
 	 * @param cur
-	 *            current cursor
+	 *            current cursor, [left, cursor) all 0
 	 * @param right
 	 *            (right, length - 1] should be all 1
+	 * 
+	 *            [cursor, right] 未知区域
 	 */
 	private void rainbowSortHelper(int[] array, int left, int cur, int right) {
 		while (cur <= right) {
