@@ -1,6 +1,7 @@
-package hw02.binarysearch.laioffer.com;
+package com.laioffer.hw02.recursion1_bs;
 
-public class SearchMatrixSolution {
+// O(log(m*n))
+public class Q04_BinarySearchMatrix {
 	public int[] searchMatrix(int[][] matrix, int target) {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
 			return new int[] { -1, -1 };
@@ -14,6 +15,7 @@ public class SearchMatrixSolution {
 
 		while (start <= end) {
 			int mid = (start + end) / 2;
+			// convert 1d coordinates to 2d coordinates
 			int midX = mid / n;
 			int midY = mid % n;
 

@@ -1,6 +1,8 @@
-package hw02.binarysearch.laioffer.com;
+package com.laioffer.hw02.recursion1_bs;
 
-public class KClosest {
+// how to find K closest elements in the array that is closest to the target number
+// follow-up: if k is very large 左边看k/2 右边看k/2
+public class Q08_KClosest {
 	public int[] kClosest(int[] input, int target, int k) {
 		if (input == null || input.length == 0) {
 			return input;
@@ -28,7 +30,9 @@ public class KClosest {
 		int end = input.length - 1;
 		while (start + 1 < end) {
 			int mid = start + (end - start) / 2;
-			if (input[mid] <= target) {
+			if (input[mid] == target) {
+				start = mid;
+			} else if (input[mid] < target) {
 				start = mid;
 			} else { // input[mid] > target
 				end = mid;
