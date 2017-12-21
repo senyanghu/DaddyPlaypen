@@ -2,7 +2,7 @@ package hw05.treeAndPQ.laioffer.com;
 
 import java.util.*;
 
-import hw04.tree.laioffer.com.TreeNode;
+import com.laioffer.hw04.bt_bst.TreeNode;
 
 public class TravelByLayer {
 	public List<List<Integer>> layerByLayer(TreeNode root) {

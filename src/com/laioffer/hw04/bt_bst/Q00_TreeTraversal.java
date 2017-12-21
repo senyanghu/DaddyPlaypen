@@ -1,9 +1,9 @@
-package hw04.tree.laioffer.com;
+package com.laioffer.hw04.bt_bst;
 
 import java.util.*;
 
 // trick: base case 永远是空指针null (99%的情况都是这样）
-public class TreeTraversal {
+public class Q00_TreeTraversal {
 	public void preOrder(TreeNode root) {
 		if (root == null) {
 			return;
@@ -68,7 +68,7 @@ public class TreeTraversal {
 		if (root == null) {
 			return;
 		}
-		
+
 		postOrder(root.left);
 		postOrder(root.right);
 		System.out.println(root.val);

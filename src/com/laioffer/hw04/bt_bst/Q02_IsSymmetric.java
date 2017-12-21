@@ -1,6 +1,6 @@
-package hw04.tree.laioffer.com;
+package com.laioffer.hw04.bt_bst;
 
-public class IsSymmetric {
+public class Q02_IsSymmetric {
 	// time complexity is O(n)
 	// space = O(height of recursion tree) = O(n/2) = O(n) worst case是一条直线
 	// https://leetcode.com/articles/symmetric-tree/
@@ -16,8 +16,9 @@ public class IsSymmetric {
 	}
 
 	public boolean isSymmetricLeetCode(TreeNode root) {
-		if (root == null)
+		if (root == null) {
 			return true;
+		}
 		return isSymmetric(root.left, root.right);
 	}
 
@@ -40,7 +41,7 @@ public class IsSymmetric {
 		if (!isSymmetric(l.right, r.left)) {
 			return false;
 		}
-		
+
 		return true;
 	}
 }

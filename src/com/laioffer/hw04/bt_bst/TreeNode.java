@@ -1,4 +1,4 @@
-package hw04.tree.laioffer.com;
+package com.laioffer.hw04.bt_bst;
 
 public class TreeNode {
 	public int val;

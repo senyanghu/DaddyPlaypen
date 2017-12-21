@@ -1,8 +1,8 @@
-package hw04.tree.laioffer.com;
+package com.laioffer.hw04.bt_bst;
 
 import java.util.*;
 
-public class TreeNodeWithinRange {
+public class Q05_TreeNodeWithinRange {
 	public List<Integer> getRange(TreeNode root, int min, int max) {
 		List<Integer> res = new ArrayList<>();
 		if (root == null) {

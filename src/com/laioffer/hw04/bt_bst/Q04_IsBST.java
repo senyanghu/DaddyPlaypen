@@ -1,7 +1,9 @@
-package hw04.tree.laioffer.com;
+package com.laioffer.hw04.bt_bst;
 
-public class IsBST {
-	// in order to deal with the corner cases, we enlarge the range of min and maxF
+public class Q04_IsBST {
+	// in order to deal with the corner cases, we enlarge the range of min and max
+	// time = O(n)
+	// space = O(height of recursion tree)
 	public boolean isValidBST(TreeNode root) {
 		return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
 	}

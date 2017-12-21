@@ -1,6 +1,6 @@
 package prac;
 
-import hw04.tree.laioffer.com.TreeNode;
+import com.laioffer.hw04.bt_bst.TreeNode;
 
 // 澳洲金老师尬聊课 BST三种遍历的非递归写法
 
