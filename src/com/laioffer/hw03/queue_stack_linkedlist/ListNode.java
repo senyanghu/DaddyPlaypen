@@ -1,4 +1,4 @@
-package hw03.queueStackLinkedlist.laioffer.com;
+package com.laioffer.hw03.queue_stack_linkedlist;
 
 public class ListNode {
 	public int val;

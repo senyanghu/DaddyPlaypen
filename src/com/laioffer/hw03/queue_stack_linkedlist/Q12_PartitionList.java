@@ -1,7 +1,7 @@
-package hw03.queueStackLinkedlist.laioffer.com;
+package com.laioffer.hw03.queue_stack_linkedlist;
 
 // in my iPhone
-public class PartitionList {
+public class Q12_PartitionList {
 	public ListNode partition(ListNode head, int target) {
 		if (head == null || head.next == null) {
 			return head;
@@ -10,19 +10,21 @@ public class PartitionList {
 		ListNode dummyLarge = new ListNode(0);
 		ListNode curSmall = dummySmall;
 		ListNode curLarge = dummyLarge;
+		ListNode cur = head;
 
-		while (head != null) {
-			if (head.val < target) {
-				curSmall.next = head;
+		while (cur != null) {
+			if (cur.val < target) {
+				curSmall.next = cur;
 				curSmall = curSmall.next;
 			} else {
-				curLarge.next = head;
+				curLarge.next = cur;
 				curLarge = curLarge.next;
 			}
-			head = head.next;
+			cur = cur.next;
 		}
 		curSmall.next = dummyLarge.next;
-		curLarge.next = null;
+		curLarge.next = null; // this step is very important, we need to set the large list's next to NULL,
+								// otherwise the circle will be created
 		return dummySmall.next;
 	}
 }

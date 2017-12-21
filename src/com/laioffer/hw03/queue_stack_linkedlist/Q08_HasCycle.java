@@ -1,6 +1,6 @@
-package hw03.queueStackLinkedlist.laioffer.com;
+package com.laioffer.hw03.queue_stack_linkedlist;
 
-public class HasCycle {
+public class Q08_HasCycle {
 	public boolean hasCycle(ListNode head) {
 		if (head == null || head.next == null) {
 			return false;

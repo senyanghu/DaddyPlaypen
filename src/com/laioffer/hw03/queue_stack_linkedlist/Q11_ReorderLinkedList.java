@@ -1,4 +1,4 @@
-package hw03.queueStackLinkedlist.laioffer.com;
+package com.laioffer.hw03.queue_stack_linkedlist;
 
 // N1 -> N2 -> .......Nn
 // (N1 -> Nn) -> (N2 -> Nn-1) ....
@@ -6,7 +6,7 @@ package hw03.queueStackLinkedlist.laioffer.com;
 // step2: reverse the second half
 // step3: merge the two linked list into one
 // time complexity: O(N)
-public class ReorderLinkedList {
+public class Q11_ReorderLinkedList {
 	public ListNode reorder(ListNode head) {
 		if (head == null || head.next == null) {
 			return null;
@@ -59,7 +59,7 @@ public class ReorderLinkedList {
 	}
 
 	public static void main(String args[]) {
-		ReorderLinkedList rll = new ReorderLinkedList();
+		Q11_ReorderLinkedList rll = new Q11_ReorderLinkedList();
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(2);
 		ListNode l3 = new ListNode(3);
