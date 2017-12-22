@@ -1,10 +1,10 @@
-package hw05.treeAndPQ.laioffer.com;
+package com.laioffer.hw05.heap_graph_algo_1;
 
 import java.util.*;
 
 import com.laioffer.hw04.bt_bst.TreeNode;
 
-public class IsTreeComplete {
+public class Q04_IsTreeComplete {
 	public boolean isComplete(TreeNode root) {
 		if (root == null) {
 			return true;

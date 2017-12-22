@@ -1,4 +1,4 @@
-package hw05.treeAndPQ.laioffer.com;
+package com.laioffer.hw05.heap_graph_algo_1;
 
 import java.util.*;
 
@@ -12,16 +12,16 @@ class GraphNode {
 	}
 }
 
-public class IsBipartite {
+public class Q03_IsBipartite {
 	public boolean isBipartite(List<GraphNode> graph) {
 		Map<GraphNode, Integer> visited = new HashMap<>();
-		
+
 		for (GraphNode gn : graph) {
 			if (!BFS(gn, visited)) {
 				return false;
 			}
 		}
-		
+
 		return true;
 	}
 

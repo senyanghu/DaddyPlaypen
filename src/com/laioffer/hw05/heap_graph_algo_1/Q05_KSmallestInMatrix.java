@@ -1,8 +1,8 @@
-package hw05.treeAndPQ.laioffer.com;
+package com.laioffer.hw05.heap_graph_algo_1;
 
 import java.util.*;
 
-public class KSmallestInMatrix {
+public class Q05_KSmallestInMatrix {
 	private class Cell {
 		int row, col, val;
 
