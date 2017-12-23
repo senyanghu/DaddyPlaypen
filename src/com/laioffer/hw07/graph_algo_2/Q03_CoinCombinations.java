@@ -1,8 +1,8 @@
-package hw07.dfs.laioffer.com;
+package com.laioffer.hw07.graph_algo_2;
 
 import java.util.*;
 
-public class CoinCombinations {
+public class Q03_CoinCombinations {
 	public List<List<Integer>> combinations(int target, int[] coins) {
 		List<List<Integer>> res = new ArrayList<>();
 		List<Integer> cur = new ArrayList<>();
@@ -28,7 +28,7 @@ public class CoinCombinations {
 	}
 
 	public static void main(String args[]) {
-		CoinCombinations cc = new CoinCombinations();
+		Q03_CoinCombinations cc = new Q03_CoinCombinations();
 		int CB_1100 = 13200;
 		int[] coins = { 100, 900 };
 		List<List<Integer>> res = cc.combinations(CB_1100, coins);

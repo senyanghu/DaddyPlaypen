@@ -1,9 +1,9 @@
-package hw07.dfs.laioffer.com;
+package com.laioffer.hw07.graph_algo_2;
 
 import java.util.*;
 
 // assumption there is no duplications
-public class Subsets {
+public class Q01_Subsets {
 	public List<String> subsets(String set) {
 		// Write your solution here.
 		List<String> result = new ArrayList<>();
@@ -22,18 +22,30 @@ public class Subsets {
 			result.add(curSet.toString());
 			return;
 		}
-
+		/*
 		dfs(arraySet, curSet, index + 1, result);
 
 		curSet = curSet.append(arraySet[index]);
 		dfs(arraySet, curSet, index + 1, result);
 		curSet.deleteCharAt(curSet.length() - 1);
+		*/
+		for (int i = 0; i < 2; i++) { // 每层有两个状态
+			if (i == 0) { // 状态1
+				curSet = curSet.append(arraySet[index]);
+				dfs(arraySet, curSet, index + 1, result);
+				curSet.deleteCharAt(curSet.length() - 1);
+			} else { // 状态2
+				// curSet.append(NOTHING);
+				dfs(arraySet, curSet, index + 1, result);
+				// curSet.deleteCharAt(NOTHING)
+			}
+		}
 	}
 
 	public static void main(String args[]) {
-		Subsets sf = new Subsets();
+		Q01_Subsets sf = new Q01_Subsets();
 
-		String nums = "abc";
+		String nums = "ab";
 		List<String> res = sf.subsets(nums);
 		for (String sub : res) {
 			System.out.println(sub.toString());
