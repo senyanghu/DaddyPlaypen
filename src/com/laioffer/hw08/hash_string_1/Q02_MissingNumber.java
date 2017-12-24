@@ -1,4 +1,4 @@
-package hw08.array.laioffer.com;
+package com.laioffer.hw08.hash_string_1;
 
 // HashSet - but this is not cool
 // XOR
@@ -7,7 +7,7 @@ package hw08.array.laioffer.com;
 // sequence1 XOR sequence2
 // time = O(2n)
 // space = O(1)
-public class MissingNumber {
+public class Q02_MissingNumber {
 	public int miss(int[] array) {
 		if (array == null || array.length == 0) {
 			return 0;

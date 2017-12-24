@@ -1,4 +1,4 @@
-package hw08.array.laioffer.com;
+package com.laioffer.hw08.hash_string_1;
 
 import java.util.*;
 
@@ -34,7 +34,7 @@ class PairComparator implements Comparator<Pair> {
 	}
 }
 
-public class TopKFrequentWords {
+public class Q01_TopKFrequentWords {
 	public String[] topK(String[] combo, int k) {
 		Map<String, Integer> map = new HashMap<>();
 		PriorityQueue<Pair> pq = new PriorityQueue<Pair>(k, new PairComparator());
@@ -57,7 +57,7 @@ public class TopKFrequentWords {
 	}
 
 	public static void main(String args[]) {
-		TopKFrequentWords topK = new TopKFrequentWords();
+		Q01_TopKFrequentWords topK = new Q01_TopKFrequentWords();
 		String[] combo = { "Jessi", "Jessi", "Jessi", "Nick", "David", "Jon", "Jon" };
 		String[] res = topK.topK(combo, 3);
 		for (String str : res) {

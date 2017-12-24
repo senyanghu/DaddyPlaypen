@@ -1,4 +1,4 @@
-package hw08.array.laioffer.com;
+package com.laioffer.hw08.hash_string_1;
 
 /**
  * remove adjacent, repeated characters in a given string, leaving only one
@@ -7,7 +7,10 @@ package hw08.array.laioffer.com;
  * 
  * aaaabbbbbc -> abc
  */
-public class RemoveAdjDup {
+// slow: all letters to the left hand side of input are the results to return
+// (excluding slow)
+// fast: current index
+public class Q06_RemoveAdjDup {
 	public String deDup(String input) {
 		if (input == null || input.length() == 0) {
 			return input;
@@ -24,7 +27,7 @@ public class RemoveAdjDup {
 	}
 
 	public static void main(String args[]) {
-		RemoveAdjDup rad = new RemoveAdjDup();
+		Q06_RemoveAdjDup rad = new Q06_RemoveAdjDup();
 		String input = "aaaabbbbbaaaac";
 		System.out.println(rad.deDup(input));
 	}

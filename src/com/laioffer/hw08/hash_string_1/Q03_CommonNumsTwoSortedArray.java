@@ -1,4 +1,4 @@
-package hw08.array.laioffer.com;
+package com.laioffer.hw08.hash_string_1;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
 // Run binary search for each element X in a[N]
 
 // HashSet
-public class CommonNumsTwoSortedArray {
+public class Q03_CommonNumsTwoSortedArray {
 	public List<Integer> common(List<Integer> listA, List<Integer> listB) {
 		List<Integer> res = new ArrayList<>();
 		int indexA = 0;
