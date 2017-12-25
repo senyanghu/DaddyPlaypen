@@ -1,4 +1,4 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
 import java.util.*;
 
@@ -14,7 +14,8 @@ import java.util.*;
  *
  */
 // 经典的剥洋葱的解法
-public class SpiralOrderTraversal1 {
+// rotate the matrix by 90 degrees
+public class Q03_SpiralOrderTraversal1 {
 	public List<Integer> spiral(int[][] matrix) {
 		List<Integer> res = new ArrayList<>();
 		if (matrix == null || matrix.length == 0) {
@@ -65,7 +66,7 @@ public class SpiralOrderTraversal1 {
 
 	public static void main(String args[]) {
 		int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		SpiralOrderTraversal1 soto = new SpiralOrderTraversal1();
+		Q03_SpiralOrderTraversal1 soto = new Q03_SpiralOrderTraversal1();
 		List<Integer> res = soto.spiral(matrix);
 		for (int i : res) {
 			System.out.println(i);

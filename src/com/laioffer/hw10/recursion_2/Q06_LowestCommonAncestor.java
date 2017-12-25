@@ -1,4 +1,4 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
 class TreeNode {
 	public int key;
@@ -6,10 +6,13 @@ class TreeNode {
 	public TreeNode right;
 }
 
-public class LowestCommonAncestor {
+// case1: if both sides are null, return null
+// case2: one side return not null, and the other side is null, return non-null side
+// case3: if both sides are not null, return root
+public class Q06_LowestCommonAncestor {
 	public TreeNode lca(TreeNode root, TreeNode one, TreeNode two) {
 		if (root == null) {
-			return root;
+			return null;
 		}
 		if (root == one || root == two) {
 			return root;

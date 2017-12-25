@@ -1,4 +1,4 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
 // algorithm note - Sept 03
 // class 11 - recursion - second class

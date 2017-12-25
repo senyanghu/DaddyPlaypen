@@ -1,4 +1,4 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
 /**
  * Word “book” can be abbreviated to 4, b3, b2k, etc. Given a string and an
@@ -10,7 +10,8 @@ package hw10.recursion2.laioffer.com;
  * Examples: pattern “s11d” matches input “sophisticated” since “11” matches
  * eleven chars “ophisticate”.
  */
-public class StringAbbrMatching {
+// O(min(m, n))
+public class Q05_StringAbbrMatching {
 	public boolean match(String input, String pattern) {
 		return matchHelper(input, 0, pattern, 0);
 	}
@@ -20,14 +21,14 @@ public class StringAbbrMatching {
 			return true;
 		}
 
-		if (inputIndex >= input.length() && patternIndex >= pattern.length()) {
-			return true;
+		if (inputIndex >= input.length() || patternIndex >= pattern.length()) {
+			return false;
 		}
 
 		// if the patternIndex points to a char
 		if (pattern.charAt(patternIndex) > '9' || pattern.charAt(patternIndex) < '0') {
 			if (input.charAt(inputIndex) == pattern.charAt(patternIndex)) {
-				return matchHelper(input, inputIndex + 1, pattern, patternIndex);
+				return matchHelper(input, inputIndex + 1, pattern, patternIndex + 1);
 			} else {
 				return false;
 			}

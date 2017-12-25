@@ -1,33 +1,38 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
-// Spiral Generate
-public class SpiralOrderTraversal3 {
-	public int[][] generateMatrix(int m, int n) {
-		int[][] res = new int[m][n];
-		int k = 1;
+import java.util.*;
+
+// 这次变成了矩形
+public class SpiralOrderTraversal2 {
+	public List<Integer> spiralOrder(int[][] matrix) {
+		List<Integer> res = new ArrayList<>();
+
+		if (matrix.length == 0) { // if it is empty
+			return res;
+		}
 
 		int rowBegin = 0;
-		int rowEnd = m - 1;
+		int rowEnd = matrix.length - 1;
 		int colBegin = 0;
-		int colEnd = n - 1;
+		int colEnd = matrix[0].length - 1;
 
 		while (rowBegin <= rowEnd && colBegin <= colEnd) {
 			// go right
 			for (int j = colBegin; j <= colEnd; j++) {
-				res[rowBegin][j] = k++;
+				res.add(matrix[rowBegin][j]);
 			}
 			rowBegin++;
 
 			// go down
 			for (int j = rowBegin; j <= rowEnd; j++) {
-				res[j][colEnd] = k++;
+				res.add(matrix[j][colEnd]);
 			}
 			colEnd--;
 
 			// go left
 			if (rowBegin <= rowEnd) {
 				for (int j = colEnd; j >= colBegin; j--) {
-					res[rowEnd][j] = k++;
+					res.add(matrix[rowEnd][j]);
 				}
 			}
 			rowEnd--;
@@ -35,12 +40,11 @@ public class SpiralOrderTraversal3 {
 			// go up
 			if (colBegin <= colEnd) {
 				for (int j = rowEnd; j >= rowBegin; j--) {
-					res[j][colBegin] = k++;
+					res.add(matrix[j][colBegin]);
 				}
 			}
 			colBegin++;
 		}
-
 		return res;
 	}
 }

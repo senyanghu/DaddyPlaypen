@@ -1,6 +1,6 @@
 package com.laioffer.hw09.string_2;
 
-public class Q01_StringReversal {
+public class Q01_ReverseString {
 	public String reverseRecursive(String input) {
 		char[] charArray = input.toCharArray();
 		reverseRecursiveHelp(charArray, 0, charArray.length - 1);
@@ -37,7 +37,7 @@ public class Q01_StringReversal {
 	}
 
 	public static void main(String args[]) {
-		Q01_StringReversal sr = new Q01_StringReversal();
+		Q01_ReverseString sr = new Q01_ReverseString();
 		System.out.println(sr.reverseRecursive("jimmy"));
 	}
 }

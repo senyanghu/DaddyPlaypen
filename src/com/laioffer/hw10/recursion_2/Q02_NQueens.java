@@ -1,4 +1,4 @@
-package hw10.recursion2.laioffer.com;
+package com.laioffer.hw10.recursion_2;
 
 import java.util.*;
 
@@ -18,7 +18,7 @@ import java.util.*;
  *
  *
  */
-public class NQueens {
+public class Q02_NQueens {
 	public List<List<Integer>> nqueen(int n) {
 		List<List<Integer>> res = new ArrayList<>();
 		if (n == 0) {
@@ -46,6 +46,7 @@ public class NQueens {
 	private boolean isValid(List<Integer> sequence, int value) {
 		int size = sequence.size();
 		for (int i = 0; i < size; i++) {
+			// size 这里实际上指的是新加入的元素所在的row
 			if (sequence.get(i) == value || (size - i) == Math.abs(sequence.get(i) - value)) {
 				return false;
 			}
@@ -54,7 +55,7 @@ public class NQueens {
 	}
 
 	public static void main(String args[]) {
-		NQueens nq = new NQueens();
+		Q02_NQueens nq = new Q02_NQueens();
 		List<List<Integer>> res = nq.nqueen(4);
 		for (List<Integer> subRes : res) {
 			for (int col : subRes) {
