@@ -1,8 +1,8 @@
-package hw09.string.laioffer.com;
+package com.laioffer.hw09.string_2;
 
 import java.util.*;
 
-public class AllPermutationsWithDup {
+public class Q06_AllPermutationsWithDup {
 	public List<String> permutations(String set) {
 		List<String> res = new ArrayList<>();
 		if (set == null) {
@@ -20,7 +20,8 @@ public class AllPermutationsWithDup {
 		}
 		Set<Character> usedSet = new HashSet<>();
 		for (int i = index; i < arrayChar.length; i++) {
-			if (usedSet.add(arrayChar[i])) {
+			if (!usedSet.contains(arrayChar[i])) {
+				usedSet.add(arrayChar[i]);
 				swap(arrayChar, index, i);
 				permutationsHelp(arrayChar, index + 1, res);
 				swap(arrayChar, index, i);
@@ -36,7 +37,7 @@ public class AllPermutationsWithDup {
 
 	public static void main(String args[]) {
 		String input = "aab";
-		AllPermutationsWithDup apwd = new AllPermutationsWithDup();
+		Q06_AllPermutationsWithDup apwd = new Q06_AllPermutationsWithDup();
 		List<String> res = apwd.permutations(input);
 		for (String sub : res) {
 			System.out.println(sub);

@@ -1,6 +1,8 @@
-package hw09.string.laioffer.com;
+package com.laioffer.hw09.string_2;
 
-public class ReverseWordsInSentence {
+// step1: swap the whole sentence
+// step2: swap every single word (two pointer)
+public class Q02_ReverseWordsInSentence {
 
 	public String reverseWords(String input) {
 		if (input == null || input.length() == 0) {
@@ -8,7 +10,9 @@ public class ReverseWordsInSentence {
 		}
 
 		char[] charArray = input.toCharArray();
+
 		this.reverse(charArray, 0, charArray.length - 1);
+
 		int start = 0;
 		for (int end = 0; end < input.length(); end++) {
 			if (charArray[end] == ' ') {
@@ -16,6 +20,7 @@ public class ReverseWordsInSentence {
 				start = end + 1;
 			}
 		}
+		// reverse the last word
 		this.reverse(charArray, start, charArray.length - 1);
 		return new String(charArray);
 	}
@@ -31,8 +36,8 @@ public class ReverseWordsInSentence {
 	}
 
 	public static void main(String args[]) {
-		ReverseWordsInSentence rwis = new ReverseWordsInSentence();
-		String input = "I get Google";
+		Q02_ReverseWordsInSentence rwis = new Q02_ReverseWordsInSentence();
+		String input = "Senyang gets Amazon";
 		System.out.println(rwis.reverseWords(input));
 	}
 }

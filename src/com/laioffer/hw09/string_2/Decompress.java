@@ -1,4 +1,4 @@
-package hw09.string.laioffer.com;
+package com.laioffer.hw09.string_2;
 
 /**
  * 7.Decompress String II

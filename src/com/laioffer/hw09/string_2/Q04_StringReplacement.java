@@ -1,14 +1,8 @@
-package hw09.string.laioffer.com;
+package com.laioffer.hw09.string_2;
 
 import java.util.*;
 
-/**
- * 这条题目很难 值得再看
- * 
- * @author senyanghu
- *
- */
-public class StringReplace {
+public class Q04_StringReplacement {
 	// replace s with t in the input
 	public String replace(String input, String s, String t) {
 		if (input == null || input.length() == 0) {
@@ -71,9 +65,11 @@ public class StringReplace {
 	private String replaceLonger(char[] input, String s, String t) {
 		List<Integer> matches = getAllMatches(input, s);
 		char[] result = new char[input.length + matches.size() * (t.length() - s.length())];
+
 		int matchIndex = matches.size() - 1;
 		int slowIndex = input.length - 1;
 		int fastIndex = result.length - 1;
+
 		while (slowIndex >= 0) {
 			if (matchIndex >= 0 && slowIndex == matches.get(matchIndex)) {
 				copySubstring(result, fastIndex - t.length() + 1, t);
@@ -85,5 +81,10 @@ public class StringReplace {
 			}
 		}
 		return new String(result);
+	}
+
+	public static void main(String args[]) {
+		Q04_StringReplacement sr = new Q04_StringReplacement();
+		System.out.println(sr.replace("sentudent", "en", "XXX"));
 	}
 }

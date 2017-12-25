@@ -1,4 +1,4 @@
-package hw09.string.laioffer.com;
+package com.laioffer.hw09.string_2;
 
 /**
  * 2.Right Shift By N Characters Right shift a given string by n characters.
@@ -7,7 +7,7 @@ package hw09.string.laioffer.com;
  * 
  * The given string is not null. n >= 0.
  */
-public class RightShiftByNCharacters {
+public class Q03_RightShiftByNCharacters {
 	public String rightShift(String input, int n) {
 		if (input == null || input.length() == n || input.length() <= 1) {
 			return input;
