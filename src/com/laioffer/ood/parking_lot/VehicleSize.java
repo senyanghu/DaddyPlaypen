@@ -1,4 +1,4 @@
-package ood2.laioffer.com;
+package com.laioffer.ood.parking_lot;
 
 public enum VehicleSize {
 	Compact(1), Large(2);

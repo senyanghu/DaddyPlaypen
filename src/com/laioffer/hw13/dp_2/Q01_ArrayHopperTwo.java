@@ -1,4 +1,4 @@
-package hw13.dp2.laioffer.com;
+package com.laioffer.hw13.dp_2;
 
 /*
  * http://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
@@ -24,7 +24,34 @@ package hw13.dp2.laioffer.com;
  * {2, 1, 1, 0, 2}, you are not able to reach the end of array, return -1 in
  * this case.
  */
-public class ArrayHopperTwo {
+// base case: M[n - 1] = 0
+// recurrence function:
+// M[i] represents the minimum number steps needed to reach the target from i-th
+// index
+// M[i] = 1 + min(M[j]) iff i + input[i] >= j
+public class Q01_ArrayHopperTwo {
+
+	private int minJumpsReview(int[] arr) {
+		if (arr.length == 0 || arr[0] == 0) {
+			return -1;// if first element is 0, end cannot be reached
+		}
+
+		int[] jumps = new int[arr.length];
+		jumps[arr.length - 1] = 0;
+
+		for (int i = arr.length - 2; i >= 0; i--) {
+			jumps[i] = Integer.MAX_VALUE;
+
+			for (int j = arr.length - 1; j > i; j--) {
+				if (i + arr[i] >= j && jumps[j] != Integer.MAX_VALUE) {
+					jumps[i] = Integer.min(jumps[i], 1 + jumps[j]);
+				}
+			}
+		}
+
+		return jumps[0] == Integer.MAX_VALUE ? -1 : jumps[0];
+	}
+
 	private int minJumps(int[] arr) {
 		int jumps[] = new int[arr.length];
 
@@ -49,11 +76,12 @@ public class ArrayHopperTwo {
 
 	// driver program to test above function
 	public static void main(String[] args) {
-		ArrayHopperTwo aht = new ArrayHopperTwo();
+		Q01_ArrayHopperTwo aht = new Q01_ArrayHopperTwo();
 		int arr1[] = { 3, 3, 1, 0, 4 };
 		System.out.println("Minimum number of jumps to reach end is : " + aht.minJumps(arr1));
-
+		System.out.println("Minimum number of jumps to reach end is : " + aht.minJumpsReview(arr1));
 		int arr2[] = { 2, 1, 1, 0, 2 };
 		System.out.println("Minimum number of jumps to reach end is : " + aht.minJumps(arr2));
+		System.out.println("Minimum number of jumps to reach end is : " + aht.minJumpsReview(arr2));
 	}
 }

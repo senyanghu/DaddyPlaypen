@@ -1,4 +1,4 @@
-package ood2.laioffer.com;
+package com.laioffer.ood.parking_lot;
 
 public class ParkingSpot {
 	private final VehicleSize size;
@@ -9,7 +9,7 @@ public class ParkingSpot {
 	}
 
 	boolean fit(Vehicle vehicle) {
-		return vehicle == null && size.getSize() >= vehicle.getSize().getSize();
+		return currentVehicle == null && size.getSize() >= vehicle.getSize().getSize();
 	}
 
 	void park(Vehicle vehicle) {

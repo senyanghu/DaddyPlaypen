@@ -1,10 +1,8 @@
-package ood2.laioffer.com;
+package com.laioffer.ood.parking_lot;
 
 public class Car extends Vehicle {
-
 	@Override
 	public VehicleSize getSize() {
 		return VehicleSize.Compact;
 	}
-
 }

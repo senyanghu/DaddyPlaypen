@@ -1,4 +1,4 @@
-package hw13.dp2.laioffer.com;
+package com.laioffer.hw13.dp_2;
 
 public class LargestSquareOf1s {
 	// https://discuss.leetcode.com/topic/18482/accepted-clean-java-dp-solution
