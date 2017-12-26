@@ -23,20 +23,25 @@ import java.util.*;
  * public class Solution { public boolean canBreak(String input, String[] dict)
  * { // Write your solution here. return false; } }
  */
-public class DictionaryWordOne {
+public class Q03_DictionaryWordOne {
 	// 左大段右小段
+	// M[i] represents whether [0, i) can be broken into words in dict
+	// base case: M[0] = false;
+	// induction rule: M[i] = OR { M[j] && substring(j, i) }
+	// time complexity: O(n^3)
 	public boolean canBreak(String input, String[] dict) {
 		Set<String> dictSet = this.buildSet(dict);
 		boolean[] M = new boolean[input.length() + 1];
 
-		/*
-		 * M[i] stands for whether subarray(0, i) can be segmented into words from the
-		 * dictionary. So M[0] means whether subarray(0, 0) (which is an empty string)
-		 * can be segmented, and of course the answer is yes.
-		 */
-		M[0] = true;
 		for (int i = 1; i <= input.length(); i++) {
-			for (int j = 0; j < i; j++) {
+			// case 1: if the word ins in the dict, done
+			if (dictSet.contains(input.substring(0, i))) {
+				M[i] = true;
+				continue;
+			}
+
+			// case 2: check the possible single splits (左大段右小段)
+			for (int j = 1; j < i; j++) {
 				if (M[j] && dictSet.contains(input.substring(j, i))) {
 					M[i] = true;
 					break;

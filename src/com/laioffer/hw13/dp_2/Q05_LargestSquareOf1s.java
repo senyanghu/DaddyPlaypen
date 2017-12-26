@@ -1,6 +1,6 @@
 package com.laioffer.hw13.dp_2;
 
-public class LargestSquareOf1s {
+public class Q05_LargestSquareOf1s {
 	// https://discuss.leetcode.com/topic/18482/accepted-clean-java-dp-solution
 	// leetcode - 221
 	public int maximal(char[][] matrix) {
