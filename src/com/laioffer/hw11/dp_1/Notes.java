@@ -1,4 +1,4 @@
-package hw11.dp1.laioffer.com;
+package com.laioffer.hw11.dp_1;
 
 public class Notes {
 	/**

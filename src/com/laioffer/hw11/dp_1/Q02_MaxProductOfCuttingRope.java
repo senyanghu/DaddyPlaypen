@@ -1,4 +1,4 @@
-package hw11.dp1.laioffer.com;
+package com.laioffer.hw11.dp_1;
 
 /**
  * Given a rope with positive integer-length n, how to cut the rope into m
@@ -12,11 +12,14 @@ package hw11.dp1.laioffer.com;
  * max product is 3 * 3 * 3 * 3 = 81 (cut the rope into 4 pieces with length of
  * each is 3).
  */
-public class MaxProductOfCuttingRope {
+// M[1] = 0
+// M[i] represents the max product that can be achieved by cutting i-meter long
+// rope at least one time
+public class Q02_MaxProductOfCuttingRope {
 	// 左大段 右小段
 	public int maxProduct(int ropeLength) {
 		int[] M = new int[ropeLength + 1];
-		M[0] = 0;
+		// M[0] = 0;
 		M[1] = 0;
 		M[2] = 1;
 
@@ -30,7 +33,7 @@ public class MaxProductOfCuttingRope {
 	}
 
 	public static void main(String args[]) {
-		MaxProductOfCuttingRope mpcr = new MaxProductOfCuttingRope();
+		Q02_MaxProductOfCuttingRope mpcr = new Q02_MaxProductOfCuttingRope();
 		System.out.println(mpcr.maxProduct(12));
 	}
 }
