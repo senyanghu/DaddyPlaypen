@@ -1,4 +1,4 @@
-package hw14.dp3.laioffer.com;
+ package com.laioffer.hw14.dp_3;
 
 // 十字架问题
 // 四个方向分别重复一下LongestConsecutiveOne的操作 然后取一个最小值
@@ -23,7 +23,7 @@ package hw14.dp3.laioffer.com;
  * 
  * the largest cross of 1s has arm length 2.
  */
-public class LongestCross1s {
+public class Q02_LongestCross1s {
 	public int largest(int[][] matrix) {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
 			return 0;
@@ -126,7 +126,7 @@ public class LongestCross1s {
 
 	public static void main(String args[]) {
 		int[][] matrix = { { 0, 0, 0, 0 }, { 1, 1, 1, 1 }, { 0, 1, 1, 1 }, { 1, 0, 1, 1 } };
-		LongestCross1s lc = new LongestCross1s();
+		Q02_LongestCross1s lc = new Q02_LongestCross1s();
 		System.out.println(lc.largest(matrix));
 	}
 }

@@ -1,6 +1,6 @@
-package hw14.dp3.laioffer.com;
+package com.laioffer.hw14.dp_3;
 
-public class LargestSubarraySum {
+public class Q00_LargestSubarraySum {
 	// Largest Sum of a sub array
 	// Index 0, 1, 2, 3, 4, 5, 6
 	// Input 1, 2, 4,-1,-2,10,-1
@@ -13,7 +13,7 @@ public class LargestSubarraySum {
 	// 1. base case: M[0] = input[0]
 	// 2. induction rule:
 	// M[i] represents [from 0-th element to the i-th element] the largest sum of
-	// the subarray [must include the i-th element].
+	// the subarray [must include the i-th element], ending with input[i].
 	// M[i] = M[i - 1] + input[i] iff M[i - 1] >= 0
 	// M[i] = input[i]
 	// Time = O(n) Space = O(n) -> O(1) if optimized
@@ -41,14 +41,14 @@ public class LargestSubarraySum {
 			return 0;
 		}
 		int max = s[0];
-		int curMax = s[0];
+		int lastMax = s[0];
 		for (int i = 1; i < s.length; i++) {
-			if (s[i] > 0) {
-				curMax = curMax + s[i];
+			if (lastMax > 0) {
+				lastMax = lastMax + s[i];
 			} else {
-				curMax = s[i];
+				lastMax = s[i];
 			}
-			max = Math.max(max, curMax);
+			max = Math.max(max, lastMax);
 		}
 		return max;
 	}

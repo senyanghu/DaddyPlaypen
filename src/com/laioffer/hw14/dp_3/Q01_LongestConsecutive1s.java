@@ -1,4 +1,4 @@
-package hw14.dp3.laioffer.com;
+package com.laioffer.hw14.dp_3;
 
 // 一个unsorted一维数组最长连续1的问题
 // {0, 1, 0, 1, 1, 1, 0}, the longest consecutive 1s is 3
@@ -7,7 +7,7 @@ package hw14.dp3.laioffer.com;
 // base case M[0] = A[0]
 // induction rule: M[i] = M[i-1] + 1; if A[i] == 1
 //					   = 0
-public class LongestConsecutive1s {
+public class Q01_LongestConsecutive1s {
 	public int longest(int[] array) {
 		if (array == null || array.length == 0) {
 			return 0;

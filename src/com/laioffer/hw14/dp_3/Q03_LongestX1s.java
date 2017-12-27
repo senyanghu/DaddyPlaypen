@@ -1,9 +1,9 @@
-package hw14.dp3.laioffer.com;
+package com.laioffer.hw14.dp_3;
 
 /**
  * 1010 0101 1010 0100
  */
-public class LongestX1s {
+public class Q03_LongestX1s {
 	public int largest(int[][] matrix) {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
 			return 0;
@@ -91,7 +91,7 @@ public class LongestX1s {
 
 	public static void main(String args[]) {
 		int[][] matrix = { { 0, 0, 0, 0 }, { 1, 1, 1, 1 }, { 0, 1, 1, 1 }, { 1, 0, 1, 1 } };
-		LongestX1s lc = new LongestX1s();
+		Q03_LongestX1s lc = new Q03_LongestX1s();
 		System.out.println(lc.largest(matrix));
 	}
 }

@@ -1,6 +1,6 @@
-package hw14.dp3.laioffer.com;
+ package com.laioffer.hw14.dp_3;
 
-public class LargestSubmatrixSum {
+public class Q05_LargestSubmatrixSum {
 	public int largest(int[][] matrix) {
 		int row = matrix.length;
 		int column = matrix[0].length;
@@ -11,7 +11,7 @@ public class LargestSubmatrixSum {
 				add(cur, matrix[j]);
 
 				result = Math.max(result, max(cur));
-			}
+		    	}
 		}
 		return result;
 	}
