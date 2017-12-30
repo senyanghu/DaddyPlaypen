@@ -1,8 +1,9 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 import java.util.*;
 
-public class DeepCopyLinkedListWithRandomPointer {
+// 唯一的难点 建立origin和copy node的一一对应的关系 防止一个original node被重复copy一次以上
+public class Q01_DeepCopyLinkedListWithRandomPointer {
 	public RandomListNode copyRandomList(RandomListNode head) {
 		// <original, clone>
 		HashMap<RandomListNode, RandomListNode> map = new HashMap<>();

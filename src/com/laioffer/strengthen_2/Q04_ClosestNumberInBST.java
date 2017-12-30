@@ -1,8 +1,8 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 // In a binary search tree, find the node containing the closest number to the given target number.
 // lc - 270
-public class ClosestNumberInBinarySearchTree {
+public class Q04_ClosestNumberInBST {
 	public int closestValue(TreeNode root, double target) {
 		int res = root.val;
 		while (root != null) {

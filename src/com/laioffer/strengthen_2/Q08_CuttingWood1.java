@@ -1,4 +1,4 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 /**
  * 
@@ -15,7 +15,7 @@ package enhance2.laioffer.com;
  * Examples L = 10, A = {2, 4, 7}, the minimum total cost is 10 + 4 + 6 = 20
  * (cut at 4 first then cut at 2 and cut at 7)
  */
-public class CuttingWood1 {
+public class Q08_CuttingWood1 {
 	public int minCost(int[] cuts, int length) {
 		int[] helperCuts = new int[cuts.length + 2];
 		helperCuts[0] = 0;

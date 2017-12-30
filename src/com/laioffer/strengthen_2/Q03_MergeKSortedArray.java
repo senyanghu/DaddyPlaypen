@@ -1,21 +1,21 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 import java.util.*;
 
-public class MergeKSortedArray {
+public class Q03_MergeKSortedArray {
 	public int[] merge(int[][] arrayOfArrays) {
 		PriorityQueue<Element> minHeap = new PriorityQueue<Element>(new MyComparactor());
 		
-		int length = 0;
+		int totalLength = 0;
 		for (int i = 0; i < arrayOfArrays.length; i++) {
 			int[] array = arrayOfArrays[i];
-			length += array.length;
+			totalLength += array.length;
 			if (array.length != 0) {
 				minHeap.offer(new Element(i, 0, array[0]));
 			}
 		}
 
-		int[] result = new int[length];
+		int[] result = new int[totalLength];
 		int resultIndex = 0; // excluding, points to the next available spot
 		
 		while (!minHeap.isEmpty()) {
@@ -30,6 +30,7 @@ public class MergeKSortedArray {
 		}
 		return result;
 	}
+	
 	static class Element {
 		int x;
 		int y;

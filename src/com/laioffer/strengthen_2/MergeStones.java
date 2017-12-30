@@ -1,4 +1,4 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 /**
  * We have a list of piles of stones, each pile of stones has a certain weight,

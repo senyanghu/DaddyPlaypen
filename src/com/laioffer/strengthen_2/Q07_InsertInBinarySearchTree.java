@@ -1,4 +1,4 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 /**
  * Insert a key in a binary search tree if the binary search tree does not
@@ -10,8 +10,8 @@ package enhance2.laioffer.com;
  * If the key is already existed in the binary search tree, you do not need to
  * do anything
  */
-public class InsertInBinarySearchTree {
-	public TreeNode insert(TreeNode root, int val) {
+public class Q07_InsertInBinarySearchTree {
+	public TreeNode insertIterative(TreeNode root, int val) {
 		if (root == null) {
 			root = new TreeNode(val);
 			return root;
@@ -38,6 +38,26 @@ public class InsertInBinarySearchTree {
 			parent.right = insertNode;
 		}
 
+		return root;
+	}
+
+	// follow up
+	public TreeNode insertRecursive(TreeNode root, int val) {
+
+		/* If the tree is empty, return a new node */
+		if (root == null) {
+			root = new TreeNode(val);
+			return root;
+		}
+
+		/* Otherwise, recur down the tree */
+		if (val < root.val) {
+			root.left = insertRecursive(root.left, val);
+		} else if (val > root.val) {
+			root.right = insertRecursive(root.right, val);
+		}
+
+		/* return the (unchanged) node pointer */
 		return root;
 	}
 }

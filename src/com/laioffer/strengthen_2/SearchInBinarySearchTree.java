@@ -1,4 +1,4 @@
-package enhance2.laioffer.com;
+package com.laioffer.strengthen_2;
 
 public class SearchInBinarySearchTree {
 	public TreeNode search(TreeNode root, int val) {
