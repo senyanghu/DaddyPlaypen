@@ -1,0 +1,29 @@
+(1) Given a number X, set X's k-th bit to 1.
+
+xxxx Y xxx "|"
+0000 1 000
+
+int setter = 1;
+setter = setter << k;
+x = x | setter;
+
+
+(2) Given a number x, set X's k-th bit to 0.
+
+xxxx Y xxx "&"
+1111 0 111
+
+int setter = 1;
+setter = setter << k;
+setter = ~setter;
+x = x & setter;
+
+(3) Given a number x, flip X's k-th bit.
+
+xxxx Y xxx "XOR"
+0000 1 000
+
+(4) x & (x - 1) change the rightmost 1 to 0
+	xxxxxxx 1 0000
+	xxxxxxx 0 1111 "&"
+	xxxxxxx 0 0000

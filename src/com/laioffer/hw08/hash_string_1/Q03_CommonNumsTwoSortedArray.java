@@ -2,10 +2,14 @@ package com.laioffer.hw08.hash_string_1;
 
 import java.util.*;
 
+// intersections of two arrays - Leetcode
+
 // Binary Search
 // Run binary search for each element X in a[N]
 
 // HashSet
+
+// two pointers
 public class Q03_CommonNumsTwoSortedArray {
 	public List<Integer> common(List<Integer> listA, List<Integer> listB) {
 		List<Integer> res = new ArrayList<>();
