@@ -16,6 +16,7 @@ public class Q04_MaxPathSumRootToLeaf {
 		}
 		
 		prefixSum = prefixSum + root.key;
+		
 		if (root.left == null && root.right == null) {
 			maxSum[0] = Integer.max(maxSum[0], prefixSum);
 			return;

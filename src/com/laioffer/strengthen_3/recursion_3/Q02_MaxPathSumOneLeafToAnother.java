@@ -6,7 +6,6 @@ package com.laioffer.strengthen_3.recursion_3;
 public class Q02_MaxPathSumOneLeafToAnother {
 
 	public int maxPathSum(TreeNode root) {
-		// Write your solution here.
 		if (root == null) {
 			return Integer.MIN_VALUE;
 		}

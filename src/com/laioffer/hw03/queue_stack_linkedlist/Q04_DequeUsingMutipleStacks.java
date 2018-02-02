@@ -7,7 +7,7 @@ package com.laioffer.hw03.queue_stack_linkedlist;
 // left.add(): stack1.push(); O(1)
 // left.remove(): case1: if stack1 is not empty, call stack1.pop(); O(1)
 //                case2: if stack1 empty(), move all elements from stack2 to stack1 and call stack1.pop(); O(n)
-// right.add(): stack.push();
+// right.add(): stack2.push();
 // right.remove(): case1: if stack2 is not empty, call stack2.pop(); O(1)
 //                 case2: if stack2 empty(), move all elements from stack1 to stack2 and call stack2.pop(); O(n)
 

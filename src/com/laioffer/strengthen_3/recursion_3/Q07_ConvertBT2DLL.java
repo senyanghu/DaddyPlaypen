@@ -9,8 +9,9 @@ public class Q07_ConvertBT2DLL {
 	// root --> Root of Binary Tree
 	void BinaryTree2DoubleLinkedList(TreeNode root) {
 		// Base case
-		if (root == null)
+		if (root == null) {
 			return;
+		}
 
 		// Recursively convert left subtree
 		BinaryTree2DoubleLinkedList(root.left);

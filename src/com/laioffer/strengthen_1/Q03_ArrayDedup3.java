@@ -33,7 +33,7 @@ public class Q03_ArrayDedup3 {
 				fast++;
 			}
 			if (fast - begin == 1) {
-				array[slow++] = array[slow];
+				array[slow++] = array[begin];
 			}
 		}
 		return Arrays.copyOf(array, slow);
