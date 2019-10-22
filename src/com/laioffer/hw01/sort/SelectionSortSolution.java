@@ -3,7 +3,8 @@ package com.laioffer.hw01.sort;
 public class SelectionSortSolution {
 
 	private static int[] sort(int[] array) {
-		if (array.length == 0 || array == null) {
+		// sanity check first
+		if (array == null || array.length == 0) {
 			return array;
 		}
 		int min, temp;
@@ -27,9 +28,9 @@ public class SelectionSortSolution {
 	}
 
 	public static void main(String[] args) {
-		// SelectionSort s = new SelectionSort();
+		SelectionSortSolution s = new SelectionSortSolution();
 		int[] array = { 3, 2, 1, -4 };
-		int[] result = SelectionSortSolution.sort(array);
+		int[] result = s.sort(array);
 		for (int i : result) {
 			System.out.println(i);
 		}
