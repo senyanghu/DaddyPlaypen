@@ -1,11 +1,11 @@
 package com.laioffer.hw01.sort;
 
 public class MoveZeroSolution {
-	public void moveZero(int[] nums) {
+	public void moveZeroToRight(int[] numbers) {
 		int insertPosition = 0;
-		for (int i = 0; i < nums.length; i++) {
-			if (nums[i] != 0) {
-				swap(nums, i, insertPosition++);
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] != 0) {
+				swap(numbers, i, insertPosition++);
 			}
 		}
 	}
