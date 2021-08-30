@@ -1,0 +1,11 @@
+common data structure:
+* array
+* stack
+* queue
+* linked list
+* tree
+* heap
+* graph
+* hash table
+
+space complexity: extra space used to run the program (不包括input的size)
