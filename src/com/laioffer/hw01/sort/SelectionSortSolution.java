@@ -48,7 +48,7 @@ public class SelectionSortSolution {
 			int globalMinIndex = i;
 			// find the global min in the rest of array
 			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[j] < arr[globalMinIndex]) {
+     				if (arr[j] < arr[globalMinIndex]) {
 					globalMinIndex = j;
 				}
 			}
@@ -62,3 +62,12 @@ public class SelectionSortSolution {
 	}
 
 }
+
+/**
+ * Given an array in stack 1, how to sort the numbers by using 2 additional stacks
+ * stack 1 || 1 3 2 4
+ * stack 2 ||
+ * stack 3 ||
+ *
+ * Use 3 stacks to simulate the selection sort
+ */
