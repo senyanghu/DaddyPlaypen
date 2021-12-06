@@ -23,7 +23,7 @@ public class Q05_ClosestToTarget {
 			}
 		}
 
-		// post processing
+		// post-processing
 		if (Math.abs(array[start] - target) < Math.abs(array[end] - target)) {
 			return start;
 		} else {

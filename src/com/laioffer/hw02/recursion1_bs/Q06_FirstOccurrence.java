@@ -2,7 +2,7 @@ package com.laioffer.hw02.recursion1_bs;
 
 // binary search 两大诀窍
 // (1) 每一次要把问题的scope narrow down
-// (2) 在每一轮的迭代不能把potential result给放过去
+// (2) 在每一轮的迭代不能把potential result给误删
 public class Q06_FirstOccurrence {
 
 	public int firstOccurTemplate(int[] array, int target) {

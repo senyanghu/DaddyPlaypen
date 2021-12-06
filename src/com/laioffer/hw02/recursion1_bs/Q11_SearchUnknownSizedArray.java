@@ -14,6 +14,7 @@ abstract class Dictionary {
 // follow up: what if we jump out at the pace of 10*i instead of 2*i
 // 2 times:
 // jump out: log_2(n) ------ jump in: log_2(2n)
+//
 // 10 times:
 // jump out: log_10(n) ------ jump in: log_2(10n)
 // 把两个加起来的和再相减 然后分析结果

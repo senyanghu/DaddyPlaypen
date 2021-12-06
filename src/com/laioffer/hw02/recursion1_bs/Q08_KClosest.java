@@ -1,7 +1,9 @@
 package com.laioffer.hw02.recursion1_bs;
 
-// how to find K closest elements in the array that is closest to the target number
+// how to find closest k elements in the array that is closest to the target number
+// log(n) + k
 // follow-up: if k is very large 左边看k/2 右边看k/2
+// 本质是 find medium or k-th number
 public class Q08_KClosest {
 	public int[] kClosest(int[] input, int target, int k) {
 		if (input == null || input.length == 0) {

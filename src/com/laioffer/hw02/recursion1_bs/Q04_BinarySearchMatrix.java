@@ -14,7 +14,7 @@ public class Q04_BinarySearchMatrix {
 		int end = m * n - 1;
 
 		while (start <= end) {
-			int mid = (start + end) / 2;
+			int mid = start + (end - start) / 2;
 			// convert 1d coordinates to 2d coordinates
 			int midX = mid / n;
 			int midY = mid % n;
